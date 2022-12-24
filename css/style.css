@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family= Pacifico & display =família= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & swap');
+@font-face {
+    font-family:'Pacifico';
+    src: url(/fontes/Pacifico-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family:'Poppins';
+    src: url(/fontes/Poppins-Regular.ttf) format(truetype), url(/fontes/Poppins-BlackItalic.ttf) format(truetype), url(/fontes/Poppins-Bold.ttf) format(truetype), url(/fontes/Poppins-ExtraBold.ttf) format(truetype), url(/fontes/Poppins-BoldItalic.ttf) format(truetype),url(/fontes/Poppins-ExtraBoldItalic.ttf) format(truetype), url(/fontes/Poppins-ExtraLight.ttf) format(truetype), url(/fontes/Poppins-ExtraLightItalic.ttf) format(truetype), url(/fontes/Poppins-Italic.ttf) format(truetype), url(/fontes/Poppins-Light.ttf) format(truetype), url(/fontes/Poppins-LightItalic.ttf) format(truetype), url(/fontes/Poppins-Black.ttf) format(truetype), url(/fontes/Poppins-MediumItalic.ttf) format(truetype), url(/fontes/Poppins-Medium.ttf) format(truetype), url(/fontes/Poppins-SemiBold.ttf) format(truetype), url(/fontes/Poppins-SemiBoldItalic.ttf) format(truetype), url(/fontes/Poppins-Thin.ttf) format(truetype), url(/fontes/Poppins-ThinItalic.ttf) format(truetype);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sem serifa;
+}
+
+/*font-family: 'Pacifico', cursiva;
+font-family: 'Poppins', sem serif
+#323232 cor 1
+#FBB03B cor  2
+*/
+.navbar{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+    
+}
+
+.logo h1{
+    font-family: 'Pacifico', cursiva;
+    color: #323232;
+    font-size: 34px;
+
+}
+
+.menu{
+    flex:70% ;
+    text-align: right;
+    padding: 20px;
+}
+.menu a{
+    color: #323232;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 16px;
+}
+.menu a:hover{
+    color: #FBB03B;
+    border-top: 4px solid #FBB03B;
+}
+
+#botao{
+    background-color: #FBB03B;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover{
+    border: none;
+    background-color: #FBB03B;
+    color:white;
+    padding: 12px 27px;
+}
+
+.header{
+    display: flex;
+    flex: row wrap;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding-top: 150px;
+}
+.headline{
+    flex: 40%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.img-headline{
+    margin-left: 10px;
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.img-headline img{
+    max-width: 100%;
+    height: 100%;
+}
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #323232;
+    padding: 0;
+    margin: 0;
+}
+.headline p{
+    color: #323232;
+    text-align: justify;
+}
+
+.btn{
+    display: inline-block;
+    background: #FBB03B;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    background: #323232;
+    padding: 25px;
+}
+
+
+#t1{
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#t2{
+    font-size: 50px;
+    font-family: 'Pacifico', cursiva;
+    color: #FBB03B;
+    text-align: center;
+}
+
+section{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin:0;
+    font-family: 'Pacifico', cursiva; 
+    color: #FBB03B;
+}
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #FBB03B;
+    color:#323232;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text-oculto{
+    display: none;
+}
+
+.card:hover{
+    background-color: #FBB03B;
+    color: #323232;
+    padding: 40px;
+}
+
+.card:hover .text-oculto{
+    display: block;
+}
+.card:hover .card-text{
+    display: none;
+}
+
+footer{
+    margin-top: 100px;
+    height: 500px;
+    background-image: linear-gradient(180deg,#f8f8f8, #f7cd89, #FBB03B);
+    text-align: center;
+    border-top: 5px solid #FBB03B;
+}
+
+.rodape{
+    padding: 100px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.logo-rodape{
+    font-family: 'Pacifico', cursiva;
+    color: #323232;
+    font-size: 60px;
+}
+.whats img{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 100px;
+
+}
